@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Satejp10
-- 👀 I’m interested in ComputerS,Automotives,Movies & alot of other things!
+- 👀 I’m interested in Computers,Automotives,Movies & alot of other things!
 - 🌱 I’m currently learing Python.
 - 📫 How to reach me ... satejp10@gmail.com
 
