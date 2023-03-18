@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Satejp10
+- 👋 Hi, I’m Satej 
 - 👀 I’m interested in Computers,Automotives,Movies & alot of other things!
 - 🌱 I’m currently learing Python.
 - 📫 How to reach me ... satejp10@gmail.com
