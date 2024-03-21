@@ -1,10 +1,12 @@
-- 👋 Hi, I’m Satej 
-- 👀 I’m interested in Computers,Automotives,Movies & alot of other things!
-- 🌱 I’m currently learing Python.
-- 📫 How to reach me ... satejp10@gmail.com
-- 100 Days of Python:https://replit.com/@SatejPatil?path=folder/100%20Days%20of%20Python
+Hello fellow developer, I'm Satej Patil!
 
-<!---
-Satejp10/Satejp10 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+🎓 I'm a Master of Science in Technology Management (MSTM) student at the University of Illinois Urbana-Champaign, specializing in Product Management. My academic journey has equipped me with a strong foundation in business management, technology, and user experience design.
+
+💼 Currently, I'm passionate about exploring opportunities in project management, product management, business analysis, and UI/UX design roles. I thrive on collaborating with cross-functional teams to drive innovation and deliver impactful solutions.
+
+🚀 Outside of academia, I enjoy working on real-world projects, conducting user research, and refining products to enhance the user experience. My GitHub showcases my endeavors in these areas, offering insights into my skills, experiences, and aspirations.
+
+🌟 Let's connect and explore possibilities for collaboration and growth! Reach out to me via LinkedIn or email.
+
+https://www.linkedin.com/in/satejp10/
+satejp10@gmail.com
