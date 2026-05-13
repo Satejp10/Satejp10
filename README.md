@@ -1,7 +1,7 @@
 <div align="center">
 
+<img width="13616" height="5440" alt="banner" src="https://github.com/user-attachments/assets/6a17d949-4db1-4e27-90ea-ac14bd4f5e1f" />
 
-![Uploading banner.png…]()
 
 # Satej Patil
 
