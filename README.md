@@ -1,5 +1,8 @@
 <div align="center">
 
+
+![Uploading banner.png…]()
+
 # Satej Patil
 
 **AI Product Manager** • Building generative AI products that drive real business impact
