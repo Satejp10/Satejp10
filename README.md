@@ -1,36 +1,137 @@
 <div align="center">
 
-<img width="13616" height="5440" alt="banner" src="https://github.com/user-attachments/assets/6a17d949-4db1-4e27-90ea-ac14bd4f5e1f" />
 
 
 # Satej Patil
 
-**AI Product Manager** • Building generative AI products that drive real business impact
+**AI Product Manager · Technical Business Analyst · GenAI Builder**
+
+Using AI to amplify human insight, creativity, and execution.
+
+<br/>
+
+<table>
+  <tr>
+    <td align="center" width="320">
+      <a href="https://drive.google.com/file/d/1lMi8lLqkKLUn4cioUIJGQhxY3D4P8JDN/view?usp=sharing">
+        <img src="https://img.shields.io/badge/RESUME-View%20PDF-111111?style=for-the-badge&logo=googledocs&logoColor=white" width="320" alt="Resume - View PDF" />
+      </a>
+    </td>
+    <td align="center" width="320">
+      <a href="https://www.linkedin.com/in/satejp10/">
+        <img src="https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" width="320" alt="LinkedIn - Connect" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+<br/><br/>
+
+<a href="https://github.com/Satejp10">
+  <img src="https://img.shields.io/badge/Portfolio-Projects-111111?style=for-the-badge&logo=github&logoColor=white" height="34" alt="Portfolio" />
+</a>
+<a href="https://drive.google.com/drive/folders/1mAD-AMDIBNN5eNK2iDbW50bJQJ4k_9hU?usp=sharing">
+  <img src="https://img.shields.io/badge/Writing-Samples-111111?style=for-the-badge&logo=googledocs&logoColor=white" height="34" alt="Writing Samples" />
+</a>
+<a href="https://medium.com/@satejp10">
+  <img src="https://img.shields.io/badge/Medium-Articles-111111?style=for-the-badge&logo=medium&logoColor=white" height="34" alt="Medium" />
+</a>
+<a href="mailto:satejp10@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" height="34" alt="Email" />
+</a>
 
 </div>
 
 ---
+<img width="13616" height="5440" alt="banner" src="https://github.com/user-attachments/assets/6a17d949-4db1-4e27-90ea-ac14bd4f5e1f" />
 
-I'm an AI Product Manager working on designing and shipping RAG-powered systems and enterprise AI tools. Previously, I led the evaluation and rollout of GitHub Copilot + Microsoft 365 Copilot at the University of Illinois Urbana-Champaign, delivering clear ROI and high adoption.
 
-Currently focused on rapid product iteration, user-centric AI experiences, and turning complex LLM capabilities into intuitive products.
+## About
 
-### What I'm working on
-- Designing RAG systems with prompt and context engineering to customize data inputs to individuals preferences and memories, because **better data in means better intelligence out**
-- Driving cross-functional roadmaps and A/B testing to improve user engagement and conversion
-- Exploring agentic AI patterns and enterprise AI adoption challenges
+I'm a product-minded AI builder with a Computer Science background and an MS in Technology Management from the University of Illinois Urbana-Champaign.
 
-### Skills & Tools
-**Product** — Roadmapping • Feature Prioritization • A/B Testing • Stakeholder Management • KPI Frameworks • Agile/Scrum • Figma  
+I work across **AI product management, technical business analysis, UX research, and rapid prototyping** — translating ambiguous user/business problems into workflows, requirements, experiments, and working product concepts.
 
-**Technical** — Python • SQL • Prompt Engineering • RAG Systems • LLM Integration • React • JIRA • Tableau  
-
-**Research** — User Research • Persona Development • Journey Mapping • Usability Testing
-
-### Let's connect
-- [LinkedIn](https://www.linkedin.com/in/satejp10/)  
-- [Email](mailto:satejp10@gmail.com)  
+Previously, I led evaluation and rollout work for **GitHub Copilot + Microsoft 365 Copilot** at UIUC, focusing on adoption, ROI, stakeholder alignment, and practical enterprise AI use cases.
 
 ---
 
-*Chicago, IL • Open to new opportunities in AI Product Management*
+## What I work on
+
+- **AI product workflows** — RAG systems, prompt/context engineering, agentic workflows, AI-assisted productivity
+- **Technical business analysis** — requirements, process mapping, stakeholder discovery, systems thinking
+- **Product execution** — roadmaps, prioritization, KPI frameworks, A/B testing, adoption loops
+- **UX and research** — personas, journey maps, usability testing, user-centered AI experiences
+- **Rapid prototyping** — AI tools, browser extensions, dashboards, workflow automation, lightweight product demos
+
+---
+
+## Featured links
+
+| Link | What it is |
+|---|---|
+| [Resume](https://drive.google.com/file/d/1lMi8lLqkKLUn4cioUIJGQhxY3D4P8JDN/view?usp=sharing) | Current resume for product, AI, business analyst, and technical roles |
+| [Writing Samples](https://drive.google.com/drive/folders/1mAD-AMDIBNN5eNK2iDbW50bJQJ4k_9hU?usp=sharing) | Product thinking, analysis, UX, and strategy writing |
+| [Medium](https://medium.com/@satejp10) | Public essays and analysis |
+| [GitHub Projects](https://github.com/Satejp10?tab=repositories) | Experiments, prototypes, technical projects, and learning artifacts |
+| [LinkedIn](https://www.linkedin.com/in/satejp10/) | Professional profile and contact |
+
+---
+
+## Selected project areas
+
+| Area | What I explore |
+|---|---|
+| **GenAI product systems** | RAG, prompt engineering, context design, AI evaluation, human-in-the-loop workflows |
+| **AI-assisted work** | Copilots, AI coding tools, productivity workflows, agentic tooling |
+| **Local AI + voice tools** | Local models, TTS workflows, GPU-friendly AI experiments, browser-based AI utilities |
+| **Product and UX research** | User journeys, research synthesis, opportunity framing, adoption analysis |
+| **Analytics and BI** | SQL, dashboards, KPI design, Power BI, Tableau, Excel, VBA/macros |
+
+---
+
+## Skills & tools
+
+**Product / BA**  
+Roadmapping · Requirements Gathering · User Stories · Process Mapping · Feature Prioritization · Stakeholder Management · Agile/Scrum · KPI Frameworks · A/B Testing
+
+**AI / Technical**  
+Prompt Engineering · RAG Systems · LLM Integration · AI Evaluation · Agentic Workflows · Python · SQL · React · APIs · Git/GitHub
+
+**Analytics / Productivity**  
+Power BI · Tableau · Excel · VBA/Macros · Jupyter · Data Analysis · Dashboarding · Experiment Analysis
+
+**UX / Research**  
+User Research · Persona Development · Journey Mapping · Usability Testing · Figma · Research Synthesis
+
+**AI tools I use / test**  
+ChatGPT · Claude · Gemini · Perplexity · GitHub Copilot · Codex · Claude Code · Cursor · Windsurf · Ollama · LM Studio · Hugging Face · n8n
+
+---
+
+## Current focus
+
+I'm especially interested in roles where I can combine:
+
+- product thinking
+- business/process analysis
+- hands-on AI tooling
+- user research
+- technical execution
+- enterprise AI adoption
+
+**Open to opportunities in:** AI Product Management, Technical Product Management, Business Analysis, Product Operations, GenAI Strategy, and AI-enabled workflow/product roles.
+
+---
+
+<div align="center">
+
+### Connect
+
+[LinkedIn](https://www.linkedin.com/in/satejp10/) · [Email](mailto:satejp10@gmail.com) · [Medium](https://medium.com/@satejp10) · [GitHub](https://github.com/Satejp10)
+
+<br/>
+
+<sub>Chicago, IL · Open to new opportunities</sub>
+
+</div>
