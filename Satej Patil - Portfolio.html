@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Satej Patil — AI Product Manager</title>
+<style>
+/* ============================================================
+   Kimi Design System tokens (canonical, from colors_and_type.css)
+   ============================================================ */
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype-variations"),
+       url("fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+}
+
+:root {
+  --kimi-blue:#1783ff; --kimi-blue-hover:#2d92ff; --kimi-blue-press:#0e6fe0; --kimi-blue-soft:#1783ff29;
+  --kimi-ink:#000; --kimi-white:#fff; --kimi-cloud:#f9fbfc; --kimi-fog:#f5f5f5;
+  --kimi-coal:#0a0a0a; --kimi-graphite:#111; --kimi-slate:#1a1a1a; --kimi-slate-2:#222; --kimi-slate-3:#2a2a2a;
+
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-display: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --r-sm:4px; --r-md:8px; --r-lg:12px; --r-xl:20px; --r-2xl:24px; --r-pill:999px;
+  --ease:cubic-bezier(.2,0,0,1); --dur-fast:120ms; --dur:180ms; --dur-slow:280ms;
+}
+
+[data-theme="dark"] {
+  --fg-1:rgba(255,255,255,.92); --fg-2:rgba(255,255,255,.62); --fg-3:rgba(255,255,255,.40); --fg-disabled:rgba(255,255,255,.22);
+  --bg-page:var(--kimi-coal); --bg-sidebar:var(--kimi-coal); --bg-surface:var(--kimi-slate); --bg-raised:var(--kimi-graphite);
+  --bg-sunken:#050505; --bg-hover:var(--kimi-slate-2); --bg-press:var(--kimi-slate-3); --bg-chip:rgba(255,255,255,.06);
+  --accent:var(--kimi-blue); --accent-hover:var(--kimi-blue-hover); --accent-press:var(--kimi-blue-press); --accent-soft:var(--kimi-blue-soft);
+  --border:rgba(255,255,255,.08); --border-strong:rgba(255,255,255,.14); --border-focus:rgba(255,255,255,.55);
+  --shadow-float:0 8px 32px rgba(0,0,0,.45);
+}
+[data-theme="light"] {
+  --fg-1:rgba(0,0,0,.92); --fg-2:rgba(0,0,0,.62); --fg-3:rgba(0,0,0,.40); --fg-disabled:rgba(0,0,0,.25);
+  --bg-page:var(--kimi-cloud); --bg-sidebar:var(--kimi-white); --bg-surface:var(--kimi-white); --bg-raised:var(--kimi-white);
+  --bg-sunken:var(--kimi-fog); --bg-hover:var(--kimi-fog); --bg-press:#ececec; --bg-chip:var(--kimi-fog);
+  --accent:var(--kimi-blue); --accent-hover:var(--kimi-blue-hover); --accent-press:var(--kimi-blue-press); --accent-soft:var(--kimi-blue-soft);
+  --border:rgba(0,0,0,.06); --border-strong:rgba(0,0,0,.10); --border-focus:var(--kimi-ink);
+  --shadow-float:0 4px 16.4px rgba(0,0,0,.10);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 14px; line-height: 20px; color: var(--fg-1);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+::selection { background: var(--accent-soft); }
+a { color: inherit; text-decoration: none; }
+svg { display: block; }
+
+/* ============================================================
+   App shell
+   ============================================================ */
+.app { display: grid; grid-template-columns: 248px 1fr; min-height: 100vh; }
+
+/* ---- Left rail ---------------------------------------------- */
+.rail {
+  position: sticky; top: 0; align-self: start;
+  height: 100vh; display: flex; flex-direction: column;
+  background: var(--bg-sidebar);
+  border-right: 1px solid var(--border);
+  padding: 16px 12px;
+}
+.brand { display: flex; align-items: center; gap: 10px; padding: 8px 8px 4px; }
+.mark { position: relative; width: 34px; height: 34px; border-radius: 11px; background: var(--bg-raised); border: 1px solid var(--border); display: grid; place-items: center; flex: none; }
+.mark span { font-family: var(--font-display); font-weight: 600; font-size: 17px; color: var(--fg-1); letter-spacing: .01em; }
+.mark i { position: absolute; top: 6px; right: 6px; width: 6px; height: 6px; border-radius: 999px; background: var(--accent); }
+.brand-text { display: flex; flex-direction: column; line-height: 1.1; min-width: 0; }
+.brand-text b { font-weight: 600; font-size: 14px; color: var(--fg-1); letter-spacing: -.01em; }
+.brand-text small { font-size: 12px; color: var(--fg-3); }
+
+.rail-cta {
+  margin: 14px 4px 16px; height: 38px; border-radius: var(--r-pill);
+  display: flex; align-items: center; justify-content: center; gap: 7px;
+  background: var(--accent); color: #fff; border: none; cursor: pointer;
+  font-family: inherit; font-size: 13px; font-weight: 600; white-space: nowrap;
+  transition: background var(--dur) var(--ease);
+}
+.rail-cta svg { width: 16px; height: 16px; flex: none; }
+.rail-cta:hover { background: var(--accent-hover); }
+.rail-cta:active { background: var(--accent-press); }
+
+.nav-label { font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--fg-3); padding: 6px 10px; }
+.nav { display: flex; flex-direction: column; gap: 2px; }
+.nav-item {
+  display: flex; align-items: center; gap: 11px;
+  padding: 8px 10px; border-radius: var(--r-md);
+  color: var(--fg-2); cursor: pointer; position: relative;
+  transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+.nav-item svg { width: 18px; height: 18px; flex: none; stroke: currentColor; }
+.nav-item span { font-size: 13px; font-weight: 500; }
+.nav-item:hover { background: var(--bg-hover); color: var(--fg-1); }
+.nav-item.active { color: var(--fg-1); background: var(--bg-chip); }
+.nav-item.active::before { content:""; position:absolute; left:-12px; top:50%; transform:translateY(-50%); width:3px; height:18px; border-radius:0 3px 3px 0; background: var(--accent); }
+.nav-item .ext { margin-left: auto; color: var(--fg-3); }
+.nav-item .ext svg { width: 13px; height: 13px; }
+
+.rail-sep { height: 1px; background: var(--border); margin: 14px 6px; }
+.rail-spacer { flex: 1; }
+
+.rail-foot { display: flex; flex-direction: column; gap: 2px; }
+.status {
+  display: flex; align-items: center; gap: 9px; padding: 9px 10px;
+  border: 1px solid var(--border); border-radius: var(--r-md); margin: 0 2px 8px;
+}
+.status .dot { width: 8px; height: 8px; border-radius: 999px; background: #16a34a; box-shadow: 0 0 0 3px color-mix(in srgb, #16a34a 22%, transparent); flex: none; }
+.status b { font-size: 12px; font-weight: 600; color: var(--fg-1); }
+.status small { font-size: 11px; color: var(--fg-3); display: block; line-height: 1.3; }
+
+.theme-toggle {
+  display: flex; align-items: center; gap: 11px; padding: 8px 10px;
+  border-radius: var(--r-md); color: var(--fg-2); cursor: pointer; background: none; border: none; width: 100%;
+  font-family: inherit; font-size: 13px; font-weight: 500; text-align: left;
+  transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+.theme-toggle:hover { background: var(--bg-hover); color: var(--fg-1); }
+.theme-toggle svg { width: 18px; height: 18px; flex: none; }
+.theme-toggle .tlabel { margin-right: auto; }
+.theme-toggle .pill { font-size: 11px; color: var(--fg-3); border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px; }
+
+/* ---- Canvas ------------------------------------------------- */
+.canvas { min-width: 0; }
+.topbar {
+  position: sticky; top: 0; z-index: 5;
+  display: flex; align-items: center; gap: 12px;
+  height: 56px; padding: 0 28px;
+  background: color-mix(in srgb, var(--bg-page) 86%, transparent);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.topbar .crumb { font-size: 13px; color: var(--fg-3); }
+.topbar .crumb b { color: var(--fg-2); font-weight: 500; }
+.topbar .spacer { flex: 1; }
+.tb-btn {
+  display: flex; align-items: center; gap: 7px; height: 34px; padding: 0 14px;
+  border: 1px solid var(--border); border-radius: var(--r-pill);
+  background: transparent; color: var(--fg-1); cursor: pointer;
+  font-family: inherit; font-size: 13px; font-weight: 500;
+  transition: background var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+.tb-btn:hover { background: var(--bg-hover); border-color: var(--border-strong); }
+.tb-btn svg { width: 16px; height: 16px; }
+.tb-btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.tb-btn.primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+
+.scroll { padding: 0 28px 120px; }
+.col { max-width: 760px; margin: 0 auto; }
+
+/* ---- Hero --------------------------------------------------- */
+.hero { padding: 92px 0 16px; }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 500; color: var(--fg-2); margin-bottom: 22px; }
+.eyebrow .badge { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 3px 9px; font-weight: 600; font-size: 11px; letter-spacing: .02em; }
+.eyebrow .badge i { width: 6px; height: 6px; border-radius: 999px; background: var(--accent); }
+.display-name {
+  font-family: var(--font-display); font-weight: 500;
+  font-size: clamp(52px, 8.2vw, 92px); line-height: 1.0; letter-spacing: .01em;
+  margin: 0; color: var(--fg-1);
+}
+.display-name .lt { color: var(--fg-3); }
+.role-line { margin: 20px 0 0; font-size: 20px; font-weight: 500; color: var(--fg-1); letter-spacing: -.01em; }
+.tagline { margin: 14px 0 0; font-size: 17px; line-height: 26px; color: var(--fg-2); max-width: 600px; text-wrap: pretty; }
+.sub { margin: 16px 0 0; font-size: 13px; color: var(--fg-3); display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.sub .mid { color: var(--fg-disabled); }
+
+/* ---- Composer (contact) ------------------------------------- */
+.composer {
+  margin: 34px 0 0; width: 100%;
+  background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--r-2xl);
+  padding: 14px 16px 12px; transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.composer.focused { border-color: var(--border-strong); box-shadow: var(--shadow-float); }
+.composer textarea {
+  display: block; width: 100%; min-height: 28px; max-height: 200px;
+  background: transparent; border: none; outline: none; resize: none;
+  color: var(--fg-1); font: 400 15px/22px var(--font-sans); padding: 2px 0;
+}
+.composer textarea::placeholder { color: var(--fg-3); }
+.composer .toolbar { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+.cbtn {
+  height: 30px; border-radius: 999px; border: 1px solid var(--border);
+  background: transparent; color: var(--fg-1); cursor: pointer;
+  display: inline-flex; align-items: center; gap: 6px; font-family: inherit; font-size: 13px; font-weight: 500;
+  transition: background var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+.cbtn.icon { width: 30px; padding: 0; justify-content: center; }
+.cbtn:not(.icon) { padding: 0 12px; }
+.cbtn:hover { background: var(--bg-hover); }
+.cbtn svg { width: 16px; height: 16px; }
+.cmodel { display: inline-flex; align-items: center; gap: 4px; color: var(--fg-2); font-size: 13px; font-weight: 500; background: none; border: none; cursor: pointer; font-family: inherit; padding: 4px 6px; border-radius: 6px; }
+.cmodel svg { width: 14px; height: 14px; }
+.cflex { flex: 1; }
+.send {
+  width: 30px; height: 30px; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--bg-chip); color: var(--fg-3); cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.send svg { width: 15px; height: 15px; }
+.send.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; }
+.chip {
+  display: inline-flex; align-items: center; gap: 7px; height: 32px; padding: 0 13px;
+  border: 1px solid var(--border); border-radius: 999px; background: transparent;
+  color: var(--fg-2); cursor: pointer; font-family: inherit; font-size: 13px; font-weight: 500;
+  transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+.chip:hover { background: var(--bg-hover); color: var(--fg-1); border-color: var(--border-strong); }
+.chip svg { width: 15px; height: 15px; }
+
+/* ---- Sections ----------------------------------------------- */
+.section { padding: 64px 0 0; scroll-margin-top: 72px; }
+.sec-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 24px; }
+.sec-num { font-family: var(--font-mono); font-size: 12px; color: var(--fg-3); }
+.sec-title { font-size: 24px; font-weight: 500; letter-spacing: -.01em; color: var(--fg-1); margin: 0; }
+.sec-head .rule { flex: 1; height: 1px; background: var(--border); }
+
+.prose p { font-size: 16px; line-height: 26px; color: var(--fg-2); margin: 0 0 16px; text-wrap: pretty; }
+.prose p:last-child { margin-bottom: 0; }
+.prose strong, .prose em { color: var(--fg-1); font-style: normal; font-weight: 500; }
+
+/* Skills */
+.skill-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 40px; }
+.skill-group h4 { font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--fg-3); margin: 0 0 12px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag { font-size: 13px; font-weight: 500; color: var(--fg-1); background: var(--bg-chip); border: 1px solid var(--border); border-radius: var(--r-md); padding: 5px 11px; white-space: nowrap; }
+.tag.cred { background: transparent; color: var(--fg-2); }
+
+/* Projects */
+.proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.card {
+  display: flex; flex-direction: column; gap: 12px;
+  background: var(--bg-raised); border: 1px solid var(--border); border-radius: var(--r-lg);
+  padding: 20px; transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease);
+}
+.card:hover { border-color: var(--border-strong); }
+.card.wide { grid-column: 1 / -1; }
+.card-top { display: flex; align-items: flex-start; gap: 10px; }
+.card-icon { width: 34px; height: 34px; border-radius: var(--r-md); background: var(--bg-chip); border: 1px solid var(--border); display: grid; place-items: center; flex: none; color: var(--fg-1); }
+.card-icon svg { width: 18px; height: 18px; }
+.card h3 { font-size: 16px; font-weight: 600; color: var(--fg-1); margin: 0; letter-spacing: -.01em; line-height: 1.3; }
+.card .kicker { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.beta { font-size: 10px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 2px 8px; }
+.card p { font-size: 14px; line-height: 21px; color: var(--fg-2); margin: 0; text-wrap: pretty; }
+.card-foot { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: auto; padding-top: 4px; }
+.stack { display: flex; flex-wrap: wrap; gap: 6px; }
+.stk { font-family: var(--font-mono); font-size: 11px; color: var(--fg-3); background: var(--bg-chip); border-radius: var(--r-sm); padding: 3px 7px; }
+.card-link { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; font-weight: 500; color: var(--accent); margin-left: auto; }
+.card-link svg { width: 14px; height: 14px; }
+.card-link:hover { color: var(--accent-hover); }
+
+/* honest placeholder for bracketed [data] */
+.todo { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 11px; color: var(--fg-3); border: 1px dashed var(--border-strong); border-radius: var(--r-sm); padding: 3px 8px; }
+.todo i { width: 5px; height: 5px; border-radius: 999px; background: var(--fg-disabled); }
+
+/* Experience */
+.timeline { display: flex; flex-direction: column; }
+.xp { display: grid; grid-template-columns: 18px 1fr; gap: 16px; padding-bottom: 28px; position: relative; }
+.xp:last-child { padding-bottom: 0; }
+.xp-rail { display: flex; flex-direction: column; align-items: center; }
+.xp-dot { width: 11px; height: 11px; border-radius: 999px; border: 2px solid var(--accent); background: var(--bg-page); margin-top: 4px; flex: none; }
+.xp-dot.hollow { border-color: var(--border-strong); }
+.xp-line { width: 1px; flex: 1; background: var(--border); margin-top: 6px; }
+.xp:last-child .xp-line { display: none; }
+.xp-body h3 { font-size: 16px; font-weight: 600; color: var(--fg-1); margin: 0; }
+.xp-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 5px 0 10px; font-size: 13px; color: var(--fg-2); }
+.xp-meta .co { color: var(--accent); font-weight: 500; }
+.xp-meta .mid { color: var(--fg-disabled); }
+.xp-body p { font-size: 14px; line-height: 21px; color: var(--fg-2); margin: 0; }
+
+/* How I work */
+.values { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+.value { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: var(--fg-1); border: 1px solid var(--border); border-radius: 999px; padding: 8px 15px; }
+.value i { width: 5px; height: 5px; border-radius: 999px; background: var(--accent); }
+
+/* Contact */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.contact-row {
+  display: flex; align-items: center; gap: 14px; padding: 16px 18px;
+  background: var(--bg-raised); border: 1px solid var(--border); border-radius: var(--r-lg);
+  transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease);
+}
+.contact-row:hover { border-color: var(--border-strong); background: var(--bg-hover); }
+.contact-row .ci { width: 38px; height: 38px; border-radius: var(--r-md); background: var(--bg-chip); display: grid; place-items: center; flex: none; color: var(--fg-1); }
+.contact-row .ci svg { width: 18px; height: 18px; }
+.contact-row .ct { min-width: 0; }
+.contact-row .ct b { display: block; font-size: 12px; color: var(--fg-3); font-weight: 500; }
+.contact-row .ct span { font-size: 14px; color: var(--fg-1); font-weight: 500; }
+.contact-row .arr { margin-left: auto; color: var(--fg-3); }
+.contact-row .arr svg { width: 16px; height: 16px; }
+
+.foot { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--border); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.foot small { font-size: 12px; color: var(--fg-3); }
+.foot .mid { color: var(--fg-disabled); }
+.foot .made { margin-left: auto; display: inline-flex; align-items: center; gap: 7px; font-size: 12px; color: var(--fg-3); }
+.foot .made b { color: var(--accent); font-weight: 600; }
+
+/* ---- Responsive --------------------------------------------- */
+.mob-bar { display: none; }
+@media (max-width: 900px) {
+  .app { grid-template-columns: 1fr; }
+  .rail { display: none; }
+  .proj-grid, .skill-grid, .contact-grid { grid-template-columns: 1fr; }
+  .mob-bar { display: flex; }
+}
+@media (max-width: 560px) {
+  .scroll { padding: 0 18px 100px; }
+  .topbar { padding: 0 18px; }
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- ================= LEFT RAIL ================= -->
+  <aside class="rail">
+    <div class="brand">
+      <div class="mark"><span>S</span><i></i></div>
+      <div class="brand-text">
+        <b>Satej Patil</b>
+        <small>AI Product Manager</small>
+      </div>
+    </div>
+
+    <button class="rail-cta" data-mail>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"></path></svg>
+      Get in touch
+    </button>
+
+    <div class="nav-label">Portfolio</div>
+    <nav class="nav" id="nav">
+      <a class="nav-item" data-go="about" href="#about">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"></path></svg>
+        <span>About</span>
+      </a>
+      <a class="nav-item" data-go="skills" href="#skills">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"></path><path d="M18 15l.9 2.3L21 18l-2.1.7L18 21l-.9-2.3L15 18l2.1-.7z"></path></svg>
+        <span>Skills</span>
+      </a>
+      <a class="nav-item" data-go="projects" href="#projects">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg>
+        <span>Featured Projects</span>
+      </a>
+      <a class="nav-item" data-go="experience" href="#experience">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+        <span>Experience</span>
+      </a>
+      <a class="nav-item" data-go="how" href="#how">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="m15.5 8.5-2 5-5 2 2-5z"></path></svg>
+        <span>How I Work</span>
+      </a>
+      <a class="nav-item" data-go="contact" href="#contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+        <span>Contact</span>
+      </a>
+    </nav>
+
+    <div class="rail-sep"></div>
+
+    <div class="nav-label">Links</div>
+    <nav class="nav">
+      <a class="nav-item" href="https://github.com" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5a3 3 0 0 0-.8-2.3c2.6-.3 5.4-1.3 5.4-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.5 11.5 0 0 0-6 0C6.4.4 5.4.7 5.4.7a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 7.1c0 4.6 2.8 5.7 5.4 6a3 3 0 0 0-.8 2.2V19"></path></svg>
+        <span>GitHub</span>
+        <span class="ext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+      </a>
+      <a class="nav-item" href="https://linkedin.com/in/satejp10" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 13v4"></path></svg>
+        <span>LinkedIn</span>
+        <span class="ext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+      </a>
+      <a class="nav-item" href="https://linktr.ee/Satej_Patil" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a3 3 0 0 1 3-3h2a3 3 0 0 1 0 6M15 12a3 3 0 0 1-3 3h-2a3 3 0 0 1 0-6"></path></svg>
+        <span>Linktree</span>
+        <span class="ext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+      </a>
+    </nav>
+
+    <div class="rail-spacer"></div>
+
+    <div class="rail-foot">
+      <div class="status">
+        <span class="dot"></span>
+        <div>
+          <b>Open to work</b>
+          <small>AI PM · Agentic PM · Enterprise AI</small>
+        </div>
+      </div>
+      <button class="theme-toggle" id="themeToggle">
+        <span class="ticon"></span>
+        <span class="tlabel">Theme</span>
+        <span class="pill" id="themePill">Dark</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ================= CANVAS ================= -->
+  <main class="canvas">
+    <div class="topbar">
+      <button class="theme-toggle mob-bar" id="themeToggleMob" style="width:auto;padding:6px 8px;flex:none;"><span class="ticon"></span></button>
+      <div class="crumb">Portfolio <span style="opacity:.4">/</span> <b id="crumbSec">About</b></div>
+      <div class="spacer"></div>
+      <a class="tb-btn" href="https://linktr.ee/Satej_Patil" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="2"></rect><path d="M11 18h2"></path></svg>
+        Links
+      </a>
+      <button class="tb-btn primary" data-mail>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+        Email me
+      </button>
+    </div>
+
+    <div class="scroll">
+      <div class="col">
+
+        <!-- ===== HERO ===== -->
+        <header class="hero" id="top">
+          <div class="eyebrow">
+            <span class="badge"><i></i>Available</span>
+            Chicago-based · remote or hybrid
+          </div>
+          <h1 class="display-name">Satej Patil<span class="lt">.</span></h1>
+          <p class="role-line">AI Product Manager</p>
+          <p class="tagline">I ship AI products — and the tools that build them. Judgment work, not translation work: I build <em>with</em> the models, not just around them.</p>
+          <p class="sub">
+            Open to AI PM, Agentic PM, and Enterprise AI roles
+            <span class="mid">·</span> remote or Chicago hybrid
+          </p>
+
+          <div class="composer" id="composer">
+            <textarea id="msg" rows="1" placeholder="Ask me anything — or write a message and it goes straight to my inbox…"></textarea>
+            <div class="toolbar">
+              <button class="cbtn icon" title="Attach a JD or brief" data-mail>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg>
+              </button>
+              <button class="cbtn" data-go="projects">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="9" cy="11" r=".9" fill="currentColor"></circle><circle cx="15" cy="11" r=".9" fill="currentColor"></circle><path d="M9 15c1 1 5 1 6 0"></path></svg>
+                Recruiter
+              </button>
+              <div class="cflex"></div>
+              <button class="cmodel">
+                Satej · v2026 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+              </button>
+              <button class="send" id="send" title="Send to inbox">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"></path></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="chips">
+            <button class="chip" data-go="projects">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg>
+              See projects
+            </button>
+            <button class="chip" data-go="skills">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"></path></svg>
+              What I do
+            </button>
+            <button class="chip" data-go="experience">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+              Experience
+            </button>
+            <button class="chip" data-mail>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+              Email me
+            </button>
+          </div>
+        </header>
+
+        <!-- ===== ABOUT ===== -->
+        <section class="section" id="about">
+          <div class="sec-head"><span class="sec-num">01</span><h2 class="sec-title">About</h2><span class="rule"></span></div>
+          <div class="prose">
+            <p>I'm an AI product manager who builds. Three years shipping AI features — RAG pipelines, LLM workflows, onboarding flows — most recently as the <strong>sole PM at an early-stage fintech AI startup</strong>, where I owned product end to end.</p>
+            <p>I don't just write specs and hand them off. I prototype, I publish my own tooling, and I own the number the product is supposed to move. The best AI PMs do <em>judgment work, not translation work</em>: anyone can relay a feature request, but the hard part is deciding what's worth building when the model can do almost anything — and being honest about what it can't.</p>
+          </div>
+        </section>
+
+        <!-- ===== SKILLS ===== -->
+        <section class="section" id="skills">
+          <div class="sec-head"><span class="sec-num">02</span><h2 class="sec-title">Skills</h2><span class="rule"></span></div>
+          <div class="skill-grid">
+            <div class="skill-group">
+              <h4>AI &amp; Product</h4>
+              <div class="tags">
+                <span class="tag">RAG</span><span class="tag">LLM application design</span><span class="tag">Prompt engineering</span><span class="tag">Agentic systems &amp; MCP</span><span class="tag">Eval / quality design</span><span class="tag">AI product discovery</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4>PM Craft</h4>
+              <div class="tags">
+                <span class="tag">Roadmapping</span><span class="tag">Spec &amp; PRD writing</span><span class="tag">Stakeholder management</span><span class="tag">User research synthesis</span><span class="tag">Metrics ownership</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4>Building</h4>
+              <div class="tags">
+                <span class="tag">Rapid prototyping</span><span class="tag">Claude Skills authoring</span><span class="tag">Python / JS scripting</span><span class="tag">Vibe coding to ship</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4>Credentials</h4>
+              <div class="tags">
+                <span class="tag cred">CSPO</span><span class="tag cred">CBAP</span><span class="tag cred">MS, IT Management — UIUC</span><span class="tag cred">BS, Computer Science</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== PROJECTS ===== -->
+        <section class="section" id="projects">
+          <div class="sec-head"><span class="sec-num">03</span><h2 class="sec-title">Featured Projects</h2><span class="rule"></span></div>
+          <div class="proj-grid">
+
+            <div class="card">
+              <div class="card-top">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="m8 9 3 3-3 3M13 15h4"></path></svg></div>
+                <div>
+                  <div class="kicker"><h3>Claude Skills Library</h3><span class="beta">Open Source</span></div>
+                </div>
+              </div>
+              <p>A growing set of production Claude Skills: an engineering project planner, a skill search-and-create tool, design-system skills (Iconscout, Kimi), and a browseability-triage skill that stops agents wasting fetches on blocked sites. Each packages a repeatable workflow into something an LLM can run reliably.</p>
+              <div class="card-foot">
+                <div class="stack"><span class="stk">Claude Skills</span><span class="stk">Markdown</span><span class="stk">prompt design</span></div>
+                <span class="todo" title="Add the real GitHub URL"><i></i>GitHub repo</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-top">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V6M3 18h18M8 14l3-4 3 2 4-6"></path></svg></div>
+                <div><div class="kicker"><h3>AI Pulse — Competitive Intelligence Timeline</h3></div></div>
+              </div>
+              <p>A JSON-driven timeline tracking AI competitive moves and how companies respond. Built to make sense of a fast market and surface patterns — including an original response taxonomy I developed (e.g. "narrative anchoring," crisis/retention responses).</p>
+              <div class="card-foot">
+                <div class="stack"><span class="stk">JSON-driven</span><span class="stk">Claude Design</span></div>
+                <span class="todo" title="Add the live link"><i></i>link</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-top">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"></ellipse><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"></path></svg></div>
+                <div><div class="kicker"><h3>Claude Browseability Dataset</h3><span class="beta">Open Source</span></div></div>
+              </div>
+              <p>An open dataset mapping which sites block, paywall, or degrade automated retrieval — useful for anyone building agents that browse the web.</p>
+              <div class="card-foot">
+                <div class="stack"><span class="stk">open data</span></div>
+                <span class="todo" title="Add the real GitHub URL"><i></i>GitHub repo</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-top">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"></rect><path d="M10 6h4M9 11h.01M12 11h.01M15 11h.01M9 14h.01M12 14h.01M15 14h.01"></path></svg></div>
+                <div><div class="kicker"><h3>Weather Glyph Toy — Nothing Phone</h3></div></div>
+              </div>
+              <p>A Glyph Matrix toy that turns live weather into glyph animations on the back of the phone.</p>
+              <div class="card-foot">
+                <div class="stack"><span class="stk">Kotlin</span><span class="stk">GlyphMatrixSDK</span></div>
+                <span class="todo" title="Add the link"><i></i>link</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-top">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"></path></svg></div>
+                <div><div class="kicker"><h3>Kokoro Local TTS — Chrome Extension</h3></div></div>
+              </div>
+              <p>A Manifest V3 extension running text-to-speech locally — no cloud round-trip.</p>
+              <div class="card-foot">
+                <div class="stack"><span class="stk">Chrome MV3</span><span class="stk">local TTS</span></div>
+                <span class="todo" title="Add the link"><i></i>link</span>
+              </div>
+            </div>
+
+            <div class="card wide">
+              <div class="card-top">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></div>
+                <div><div class="kicker"><h3>FairQuanta — Sole Product Manager</h3><span class="beta">Case Study</span></div></div>
+              </div>
+              <p>Owned product end to end at a pre-seed fintech AI startup: shipped RAG/LLM features, rebuilt onboarding, led a rebrand, and ran a security review of the codebase.</p>
+              <div class="card-foot">
+                <div class="stack"><span class="stk">RAG / LLM</span><span class="stk">onboarding</span><span class="stk">rebrand</span><span class="stk">security review</span></div>
+                <span class="todo" title="Add 1–2 real metrics — e.g. activation lift, time-to-value, retention"><i></i>add 1–2 real metrics</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-top">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+                <div><div class="kicker"><h3>Writing</h3></div></div>
+              </div>
+              <p>Essays on AI competitive dynamics and product strategy, including an original taxonomy of competitive response types and early coverage of generative UI.</p>
+              <div class="card-foot">
+                <div class="stack"><span class="stk">essays</span><span class="stk">strategy</span></div>
+                <span class="todo" title="Add your Medium URL"><i></i>Medium</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-top">
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 3 14 9-14 9z"></path><path d="M6 3v18"></path></svg></div>
+                <div><div class="kicker"><h3>Yugānta</h3><span class="beta">In Progress</span></div></div>
+              </div>
+              <p>Solo game design exploring Hindu cosmology and the Kali Yuga as a soulslike setting; world map, core mechanic, and opening cinematic in progress.</p>
+              <div class="card-foot">
+                <div class="stack"><span class="stk">game design</span><span class="stk">worldbuilding</span></div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ===== EXPERIENCE ===== -->
+        <section class="section" id="experience">
+          <div class="sec-head"><span class="sec-num">04</span><h2 class="sec-title">Experience</h2><span class="rule"></span></div>
+          <div class="timeline">
+            <div class="xp">
+              <div class="xp-rail"><div class="xp-dot"></div><div class="xp-line"></div></div>
+              <div class="xp-body">
+                <h3>Product Manager <span style="color:var(--fg-3);font-weight:500;">(Sole PM)</span></h3>
+                <div class="xp-meta"><span class="co">FairQuanta</span><span class="mid">·</span>Pre-seed fintech AI<span class="mid">·</span><span class="todo"><i></i>start – end</span></div>
+                <p>Shipped RAG/LLM features, onboarding, rebrand, and a codebase security review. Owned product end to end.</p>
+              </div>
+            </div>
+            <div class="xp">
+              <div class="xp-rail"><div class="xp-dot hollow"></div><div class="xp-line"></div></div>
+              <div class="xp-body">
+                <h3 style="color:var(--fg-2);">Earlier role</h3>
+                <div class="xp-meta"><span class="todo"><i></i>title · company · dates</span></div>
+                <p style="color:var(--fg-3);">Add your earlier position here — title, company, and dates.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== HOW I WORK ===== -->
+        <section class="section" id="how">
+          <div class="sec-head"><span class="sec-num">05</span><h2 class="sec-title">How I Work</h2><span class="rule"></span></div>
+          <div class="values">
+            <span class="value"><i></i>Autonomy</span>
+            <span class="value"><i></i>Curiosity</span>
+            <span class="value"><i></i>Honesty</span>
+            <span class="value"><i></i>Depth</span>
+          </div>
+          <div class="prose">
+            <p>I think in systems and learn by prototyping. I'd rather get direct feedback than be told it's fine.</p>
+          </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="section" id="contact">
+          <div class="sec-head"><span class="sec-num">06</span><h2 class="sec-title">Contact</h2><span class="rule"></span></div>
+          <div class="contact-grid">
+            <a class="contact-row" href="/cdn-cgi/l/email-protection#0d7e6c7968677d3c3d4d6a606c6461236e6260">
+              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></span>
+              <span class="ct"><b>Email</b><span><span class="__cf_email__" data-cfemail="77041603121d07464737101a161e1b5914181a">[email&#160;protected]</span></span></span>
+              <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+            </a>
+            <a class="contact-row" href="https://linkedin.com/in/satejp10" target="_blank" rel="noopener">
+              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 13v4"></path></svg></span>
+              <span class="ct"><b>LinkedIn</b><span>linkedin.com/in/satejp10</span></span>
+              <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+            </a>
+            <a class="contact-row" href="https://linktr.ee/Satej_Patil" target="_blank" rel="noopener" style="grid-column:1/-1;">
+              <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a3 3 0 0 1 3-3h2a3 3 0 0 1 0 6M15 12a3 3 0 0 1-3 3h-2a3 3 0 0 1 0-6"></path></svg></span>
+              <span class="ct"><b>All links</b><span>linktr.ee/Satej_Patil</span></span>
+              <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+            </a>
+          </div>
+
+          <div class="foot">
+            <small>Chicago, IL</small><span class="mid">·</span><small>Open to AI PM, Agentic PM &amp; Enterprise AI roles</small>
+            <span class="made">Built with the <b>Kimi</b> design system</span>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+(function () {
+  var root = document.documentElement;
+  var sunIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>';
+  var moonIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>';
+
+  function applyTheme(t) {
+    root.setAttribute('data-theme', t);
+    var pill = document.getElementById('themePill');
+    if (pill) pill.textContent = t === 'dark' ? 'Dark' : 'Light';
+    var icon = t === 'dark' ? moonIcon : sunIcon;
+    document.querySelectorAll('.ticon').forEach(function (el) { el.innerHTML = icon; });
+    try { localStorage.setItem('satej-theme', t); } catch (e) {}
+  }
+  var saved;
+  try { saved = localStorage.getItem('satej-theme'); } catch (e) {}
+  applyTheme(saved || 'dark');
+
+  function toggle() { applyTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); }
+  ['themeToggle', 'themeToggleMob'].forEach(function (id) {
+    var b = document.getElementById(id); if (b) b.addEventListener('click', toggle);
+  });
+
+  // smooth-scroll for [data-go]
+  function goTo(id) {
+    var el = document.getElementById(id);
+    if (el) window.scrollTo({ top: el.offsetTop - 60, behavior: 'smooth' });
+  }
+  document.querySelectorAll('[data-go]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      if (el.tagName === 'A') e.preventDefault();
+      goTo(el.getAttribute('data-go'));
+    });
+  });
+
+  // contact composer -> mailto
+  var EMAIL = 'satejp10@gmail.com';
+  function mailto(body) {
+    var url = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent('Hello Satej — from your portfolio');
+    if (body) url += '&body=' + encodeURIComponent(body);
+    window.location.href = url;
+  }
+  document.querySelectorAll('[data-mail]').forEach(function (el) {
+    el.addEventListener('click', function (e) { e.preventDefault(); mailto(''); });
+  });
+
+  var msg = document.getElementById('msg');
+  var send = document.getElementById('send');
+  var composer = document.getElementById('composer');
+  function grow() { msg.style.height = 'auto'; msg.style.height = Math.min(msg.scrollHeight, 200) + 'px'; }
+  function refresh() { send.classList.toggle('active', msg.value.trim().length > 0); }
+  msg.addEventListener('input', function () { grow(); refresh(); });
+  msg.addEventListener('focus', function () { composer.classList.add('focused'); });
+  msg.addEventListener('blur', function () { composer.classList.remove('focused'); });
+  msg.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); if (msg.value.trim()) mailto(msg.value.trim()); }
+  });
+  send.addEventListener('click', function () { if (msg.value.trim()) mailto(msg.value.trim()); else msg.focus(); });
+
+  // scroll-spy
+  var sections = ['about', 'skills', 'projects', 'experience', 'how', 'contact'];
+  var labels = { about: 'About', skills: 'Skills', projects: 'Featured Projects', experience: 'Experience', how: 'How I Work', contact: 'Contact' };
+  var navItems = {};
+  document.querySelectorAll('.nav-item[data-go]').forEach(function (el) { navItems[el.getAttribute('data-go')] = el; });
+  var crumb = document.getElementById('crumbSec');
+  function spy() {
+    var pos = window.scrollY + 140;
+    var cur = 'about';
+    for (var i = 0; i < sections.length; i++) {
+      var el = document.getElementById(sections[i]);
+      if (el && el.offsetTop <= pos) cur = sections[i];
+    }
+    Object.keys(navItems).forEach(function (k) { navItems[k].classList.toggle('active', k === cur); });
+    if (crumb) crumb.textContent = labels[cur];
+  }
+  window.addEventListener('scroll', spy, { passive: true });
+  spy();
+})();
+</script>
+</body>
+</html>
