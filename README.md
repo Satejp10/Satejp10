@@ -13,7 +13,7 @@ Using AI to amplify human insight, creativity, and execution.
 <table>
   <tr>
     <td align="center" width="320">
-      <a href="https://raw.githubusercontent.com/Satejp10/Satejp10/main/Resume/Satej_Patil_Resume.pdf" target="_blank">
+      <a href="https://drive.google.com/file/d/1GjeJVipuD-X1WpTRahFETdMWWuDJXRJq/view" target="_blank">
         <img src="https://img.shields.io/badge/RESUME-View%20PDF-111111?style=for-the-badge&logo=googledocs&logoColor=white" width="320" alt="Resume - View PDF" />
       </a>
     </td>
@@ -70,7 +70,7 @@ Previously, I led evaluation and rollout work for **GitHub Copilot + Microsoft 3
 
 | Link | What it is |
 |---|---|
-| [Resume](https://raw.githubusercontent.com/Satejp10/Satejp10/main/Resume/Satej_Patil_Resume.pdf) | Current resume for product, AI, business analyst, and technical roles |
+| [Resume](https://drive.google.com/file/d/1GjeJVipuD-X1WpTRahFETdMWWuDJXRJq/view) | Current resume for product, AI, business analyst, and technical roles |
 | [Writing Samples](https://drive.google.com/drive/folders/1mAD-AMDIBNN5eNK2iDbW50bJQJ4k_9hU?usp=sharing) | Product thinking, analysis, UX, and strategy writing |
 | [Medium](https://medium.com/@satejp10) | Public essays and analysis |
 | [GitHub Projects](https://github.com/Satejp10?tab=repositories) | Experiments, prototypes, technical projects, and learning artifacts |
