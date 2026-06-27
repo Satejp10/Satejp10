@@ -84,16 +84,20 @@ Interactive infographics & data visualizations — built with Claude, served liv
 
 <table>
   <tr>
-    <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/claude-design-works/ai-accelerators-2026.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/ai-accelerators-2026.png" alt="AI Engines, What Runs Your AI?" width="420"></a><br><sub><b>AI Engines, What Runs Your AI?</b></sub></td>
-    <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/claude-design-works/agentic-capabilities-june-2026.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/agentic-capabilities-june-2026.png" alt="Agentic Capabilities" width="420"></a><br><sub><b>Agentic Capabilities</b></sub></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/claude-design-works/ai-lab-headcount.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/ai-lab-headcount.png" alt="AI Labs, by Headcount" width="420"></a><br><sub><b>AI Labs, by Headcount</b></sub></td>
-    <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/claude-design-works/glass-morphism-design-trials.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/glass-morphism-design-trials.png" alt="Liquid Glass — Design Trials" width="420"></a><br><sub><b>Liquid Glass — Design Trials</b></sub></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/claude-design-works/how-india-got-online-pixel-quest.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/how-india-got-online-pixel-quest.png" alt="How India Got Online — Pixel Quest" width="420"></a><br><sub><b>How India Got Online — Pixel Quest</b></sub></td>
+    <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/claude-design-works/how-india-got-online-pixel-quest.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/how-india-got-online-pixel-quest.gif" alt="How India Got Online — Pixel Quest" width="420"></a><br><sub><b>How India Got Online — Pixel Quest</b></sub></td>
     <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/claude-design-works/india-online-data-report.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/india-online-data-report.png" alt="India Online — How a Billion Got Connected" width="420"></a><br><sub><b>India Online — How a Billion Got Connected</b></sub></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/claude-design-works/ai-accelerators-2026.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/ai-accelerators-2026.png" alt="AI Engines, What Runs Your AI?" width="420"></a><br><sub><b>AI Engines, What Runs Your AI?</b></sub></td>
+    <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/EDGE/"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/edge.gif" alt="EDGE — Browser Recreation" width="420"></a><br><sub><b>EDGE — Browser Recreation</b></sub></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/claude-design-works/agentic-capabilities-june-2026.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/agentic-capabilities-june-2026.png" alt="Agentic Capabilities" width="420"></a><br><sub><b>Agentic Capabilities</b></sub></td>
+    <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/claude-design-works/ai-lab-headcount.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/ai-lab-headcount.png" alt="AI Labs, by Headcount" width="420"></a><br><sub><b>AI Labs, by Headcount</b></sub></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/claude-design-works/terminal-portfolio.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/terminal-portfolio.png" alt="Terminal Portfolio" width="420"></a><br><sub><b>Terminal Portfolio</b></sub></td>
+    <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/claude-design-works/glass-morphism-design-trials.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/glass-morphism-design-trials.png" alt="Liquid Glass — Design Trials" width="420"></a><br><sub><b>Liquid Glass — Design Trials</b></sub></td>
   </tr>
 </table>
 
