@@ -2,7 +2,7 @@
 
 
 
-# Satej Patil
+# <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="38" alt="wave"> Satej Patil
 
 **AI Product Manager · Technical Business Analyst · GenAI Builder**
 
@@ -25,47 +25,7 @@ Using AI to amplify human insight, creativity, and execution.
   </tr>
 </table>
 
-## Tools I use & test
-
-### 🤖 AI
-
-<p align="center">
-  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/claude-color.png" width="48" alt="Claude" title="Claude">&nbsp;&nbsp;
-  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/claudecode-color.png" width="48" alt="Claude Code" title="Claude Code">&nbsp;&nbsp;
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/mcp.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/mcp.png" width="48" alt="MCP" title="MCP"></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/openai.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/openai.png" width="48" alt="ChatGPT" title="ChatGPT"></picture>&nbsp;&nbsp;
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/codex.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/codex.png" width="48" alt="Codex" title="Codex"></picture>&nbsp;&nbsp;
-  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/lovable-color.png" width="48" alt="Lovable">
-  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/gemini-color.png" width="48" alt="Gemini" title="Gemini">&nbsp;&nbsp;
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/grok.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/grok.png" width="48" alt="Grok" title="Grok"></picture>&nbsp;&nbsp;
-  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/deepseek-color.png" width="48" alt="DeepSeek" title="DeepSeek">&nbsp;&nbsp;
-  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/qwen-color.png" width="48" alt="Qwen" title="Qwen">&nbsp;&nbsp;
- 
-  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/huggingface-color.png" width="48" alt="Hugging Face" title="Hugging Face">&nbsp;&nbsp;
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/ollama.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/ollama.png" width="48" alt="Ollama" title="Ollama"></picture>&nbsp;&nbsp;
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/openrouter.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/openrouter.png" width="48" alt="OpenRouter" title="OpenRouter"></picture>&nbsp;&nbsp;
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/cursor.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/cursor.png" width="48" alt="Cursor" title="Cursor"></picture>&nbsp;&nbsp;
-  
-</p>
-
-<p align="center">
-  <b>Also:</b> LM Studio · NotebookLM · Gemini CLI · n8n · Lovable · Replit · Manus · opencode · OpenClaw · Base44
-</p>
-
-### 💻 Development
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=py,js,nodejs,docker,git,github,linux,cloudflare,netlify" alt="Python, JavaScript, Node.js, Docker, Git, GitHub, Linux, Cloudflare, Netlify">
-</p>
-
-### 🛠️ Product
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/figma" width="40" alt="Figma" title="Figma">&nbsp;&nbsp;&nbsp;
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/notion/white"><img src="https://cdn.simpleicons.org/notion" width="40" alt="Notion" title="Notion"></picture>&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/jira" width="40" alt="Jira" title="Jira">
-</p>
-<br/><br/>
+<br/>
 
 <a href="https://satejp10.github.io/claude-works/">
   <img src="https://img.shields.io/badge/Portfolio-Projects-111111?style=for-the-badge&logo=github&logoColor=white" height="34" alt="Portfolio" />
@@ -79,6 +39,51 @@ Using AI to amplify human insight, creativity, and execution.
 <a href="mailto:satejp10@gmail.com">
   <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" height="34" alt="Email" />
 </a>
+
+## Tools I use & test
+
+### 🤖 AI
+
+<p align="center">
+  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/claude-color.png" width="48" alt="Claude" title="Claude">&nbsp;&nbsp;
+  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/claudecode-color.png" width="48" alt="Claude Code" title="Claude Code">&nbsp;&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/mcp.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/mcp.png" width="48" alt="MCP" title="MCP"></picture>&nbsp;&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/openai.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/openai.png" width="48" alt="ChatGPT" title="ChatGPT"></picture>&nbsp;&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/codex.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/codex.png" width="48" alt="Codex" title="Codex"></picture>&nbsp;&nbsp;
+  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/gemini-color.png" width="48" alt="Gemini" title="Gemini">&nbsp;&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/grok.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/grok.png" width="48" alt="Grok" title="Grok"></picture>&nbsp;&nbsp;
+  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/deepseek-color.png" width="48" alt="DeepSeek" title="DeepSeek">&nbsp;&nbsp;
+  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/qwen-color.png" width="48" alt="Qwen" title="Qwen">&nbsp;&nbsp;
+  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/huggingface-color.png" width="48" alt="Hugging Face" title="Hugging Face">&nbsp;&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/ollama.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/ollama.png" width="48" alt="Ollama" title="Ollama"></picture>&nbsp;&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/openrouter.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/openrouter.png" width="48" alt="OpenRouter" title="OpenRouter"></picture>&nbsp;&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/cursor.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/cursor.png" width="48" alt="Cursor" title="Cursor"></picture>&nbsp;&nbsp;
+  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/lovable-color.png" width="48" alt="Lovable" title="Lovable">&nbsp;&nbsp;
+  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/n8n-color.png" width="48" alt="n8n" title="n8n">
+</p>
+
+<p align="center">
+  <b>Also:</b> LM Studio · NotebookLM · Gemini CLI · Replit · Manus · opencode · OpenClaw · Base44
+</p>
+
+### 💻 Development
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=py,js,nodejs,docker,git,github,linux,cloudflare,netlify" alt="Python, JavaScript, Node.js, Docker, Git, GitHub, Linux, Cloudflare, Netlify">
+</p>
+
+### 🛠️ Product
+
+<p align="center">
+  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/figma-color.png" width="40" alt="Figma" title="Figma">&nbsp;&nbsp;&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/notion/white"><img src="https://cdn.simpleicons.org/notion" width="40" alt="Notion" title="Notion"></picture>&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/jira" width="40" alt="Jira" title="Jira">&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/tampermonkey" width="40" alt="Tampermonkey" title="Tampermonkey">
+</p>
+
+<p align="center">
+  <sub><a href="https://medium.com/@satejp10">Read my writing on Medium →</a></sub>
+</p>
 
 </div>
 
