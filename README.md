@@ -34,6 +34,7 @@ Using AI to amplify human insight, creativity, and execution.
   <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/claudecode-color.png" width="48" alt="Claude Code" title="Claude Code">&nbsp;&nbsp;
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/openai.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/openai.png" width="48" alt="ChatGPT" title="ChatGPT"></picture>&nbsp;&nbsp;
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/codex.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/codex.png" width="48" alt="Codex" title="Codex"></picture>&nbsp;&nbsp;
+  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/lovable-color.png" width="48" alt="Lovable">
   <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/gemini-color.png" width="48" alt="Gemini" title="Gemini">&nbsp;&nbsp;
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/grok.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/grok.png" width="48" alt="Grok" title="Grok"></picture>&nbsp;&nbsp;
   <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/deepseek-color.png" width="48" alt="DeepSeek" title="DeepSeek">&nbsp;&nbsp;
