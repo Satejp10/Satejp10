@@ -38,7 +38,7 @@ Using AI to amplify human insight, creativity, and execution.
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/grok.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/grok.png" width="48" alt="Grok" title="Grok"></picture>&nbsp;&nbsp;
   <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/deepseek-color.png" width="48" alt="DeepSeek" title="DeepSeek">&nbsp;&nbsp;
   <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/qwen-color.png" width="48" alt="Qwen" title="Qwen">&nbsp;&nbsp;
-  <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/kimi-color.png" width="48" alt="Kimi" title="Kimi">&nbsp;&nbsp;
+ 
   <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/huggingface-color.png" width="48" alt="Hugging Face" title="Hugging Face">&nbsp;&nbsp;
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/ollama.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/ollama.png" width="48" alt="Ollama" title="Ollama"></picture>&nbsp;&nbsp;
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/openrouter.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/openrouter.png" width="48" alt="OpenRouter" title="OpenRouter"></picture>&nbsp;&nbsp;
