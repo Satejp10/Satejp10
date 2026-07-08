@@ -32,6 +32,7 @@ Using AI to amplify human insight, creativity, and execution.
 <p align="center">
   <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/claude-color.png" width="48" alt="Claude" title="Claude">&nbsp;&nbsp;
   <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/claudecode-color.png" width="48" alt="Claude Code" title="Claude Code">&nbsp;&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/mcp.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/mcp.png" width="48" alt="MCP" title="MCP"></picture>
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/openai.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/openai.png" width="48" alt="ChatGPT" title="ChatGPT"></picture>&nbsp;&nbsp;
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/codex.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/codex.png" width="48" alt="Codex" title="Codex"></picture>&nbsp;&nbsp;
   <img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/lovable-color.png" width="48" alt="Lovable">
@@ -44,7 +45,7 @@ Using AI to amplify human insight, creativity, and execution.
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/ollama.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/ollama.png" width="48" alt="Ollama" title="Ollama"></picture>&nbsp;&nbsp;
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/openrouter.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/openrouter.png" width="48" alt="OpenRouter" title="OpenRouter"></picture>&nbsp;&nbsp;
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/cursor.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/cursor.png" width="48" alt="Cursor" title="Cursor"></picture>&nbsp;&nbsp;
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://unpkg.com/@lobehub/icons-static-png@latest/dark/mcp.png"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/light/mcp.png" width="48" alt="MCP" title="MCP"></picture>
+  
 </p>
 
 <p align="center">
