@@ -127,6 +127,7 @@ Previously, I led evaluation and rollout work for **GitHub Copilot + Microsoft 3
 
 Interactive infographics & data visualizations — built with Claude, served live via GitHub Pages.
 
+<!-- SELECTED-WORK:START -->
 <table>
   <tr>
     <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/claude-design-works/how-india-got-online-pixel-quest.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/how-india-got-online-pixel-quest.gif" alt="How India Got Online — Pixel Quest" width="420"></a><br><sub><b>How India Got Online — Pixel Quest</b></sub></td>
@@ -145,6 +146,7 @@ Interactive infographics & data visualizations — built with Claude, served liv
     <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/claude-design-works/glass-morphism-design-trials.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/glass-morphism-design-trials.png" alt="Liquid Glass — Design Trials" width="420"></a><br><sub><b>Liquid Glass — Design Trials</b></sub></td>
   </tr>
 </table>
+<!-- SELECTED-WORK:END -->
 
 **→ [Full gallery](https://satejp10.github.io/claude-works/)** · [source](https://github.com/Satejp10/claude-works)
 
