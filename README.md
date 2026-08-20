@@ -40,9 +40,14 @@ Using AI to amplify human insight, creativity, and execution.
   <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" height="34" alt="Email" />
 </a>
 
+<!-- analytics-badge:hidden — the Cloudflare Worker is not deployed yet, so this
+     image would render as a broken link. Deploy steps and the un-hide step are in
+     https://github.com/Satejp10/claude-works/blob/main/analytics/HANDOFF.md
+     To restore: delete these four header lines and the comment-close line below.
 <br/><br/>
 
 <img src="https://claude-works-analytics.satejp10.workers.dev/views.svg" height="28" alt="Profile views" />
+-->
 
 ## Tools I use & test
 
@@ -158,9 +163,14 @@ Interactive infographics & data visualizations — built with Claude, served liv
 
 **→ [Full gallery](https://satejp10.github.io/claude-works/)** · [source](https://github.com/Satejp10/claude-works)
 
+<!-- analytics-badge:hidden — the Cloudflare Worker is not deployed yet, so this
+     image would render as a broken link. Deploy steps and the un-hide step are in
+     https://github.com/Satejp10/claude-works/blob/main/analytics/HANDOFF.md
+     To restore: delete these four header lines and the comment-close line below.
 <img src="https://claude-works-analytics.satejp10.workers.dev/badge.svg" width="540" alt="Portfolio analytics: total views, unique visitors, desktop/mobile split, and top regions for the live gallery" />
 
 <sub>Live traffic to the gallery above. GitHub's image proxy hides visitor details from README pages, so this is measured on the Pages site itself — <a href="https://github.com/Satejp10/claude-works/tree/main/analytics">Cloudflare Worker + D1, no cookies, no IP stored</a>.</sub>
+-->
 
 ---
 
