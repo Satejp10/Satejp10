@@ -139,7 +139,7 @@ Interactive infographics & data visualizations — built with Claude, served liv
 <!-- SELECTED-WORK:START -->
 <table>
   <tr>
-    <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/works/android-vs-ios-share.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/android-vs-ios-share.png" alt="Android vs iOS share" width="420"></a><br><sub><b>Android vs iOS share</b></sub></td>
+    <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/works/android-vs-ios-share.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/android-vs-ios-share.png" alt="Android vs iOS market share" width="420"></a><br><sub><b>Android vs iOS market share</b></sub></td>
     <td width="50%" align="center" valign="top"><a href="https://satejp10.github.io/claude-works/works/haiku-pricing.html"><img src="https://raw.githubusercontent.com/Satejp10/claude-works/main/assets/thumbnails/haiku-pricing.png" alt="Haiku Price and Score" width="420"></a><br><sub><b>Haiku Price and Score</b></sub></td>
   </tr>
   <tr>
